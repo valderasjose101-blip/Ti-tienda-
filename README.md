@@ -43,7 +43,7 @@
 ---
 
 ### 🚀 Entra a la tienda completa
-👉 **[Clic aquí para ver todo en la tienda](https://valderasjose101-blip.github.io/Ti-tenda-/)**
+👉 **[Clic aquí para ver todo en la tienda](https://valderasjose101-blip.github.io/Ti-tienda-/)**
 
 *Copia y pega tu enlace arriba donde dice la dirección 👆*
 
@@ -59,13 +59,13 @@
 ---
 
 ### 📞 Contáctame
-- 💬 WhatsApp: *pon tu número aquí*
-- 📧 Correo: *tu correo si quieres*
+- 💬 WhatsApp: *+52 2871818342*
+- 📧 Correo: *valderasjose101@gmail.com*
 - 📍 Ubicación: Veracruz, México
 
 ---
 
 ### ⭐ Síguenos y comparte
-> "Estilo que se siente, ropa que se ve" 🔥
+> "Estilo que se siente, ropa que se ve chida" 🔥
 
 </div>
