@@ -1,32 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Mi Tienda</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tienda en Línea</title>
     <style>
-        body { font-family: Arial; margin: 0; padding: 0; background: #f4f4f4; }
-        header { background: #2c3e50; color: white; padding: 20px; text-align: center; }
-        .producto { background: white; margin: 15px; padding: 15px; border-radius: 8px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background: #f8f9fa; }
+        
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 { font-size: 28px; margin-bottom: 5px; }
+        .subtitulo { opacity: 0.9; }
+
+        .contenedor {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        .grid-productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .producto {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .producto:hover { transform: translateY(-5px); }
+
+        .producto h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .precio {
+            font-size: 22px;
+            color: #e74c3c;
+            font-weight: bold;
+            margin: 12px 0;
+        }
+
+        .boton {
+            display: block;
+            width: 100%;
+            background: #27ae60;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .boton:hover { background: #219653; }
     </style>
 </head>
 <body>
+
     <header>
         <h1>🛍️ Mi Tienda en Línea</h1>
-        <p>Los mejores productos, directo hasta ti</p>
+        <p class="subtitulo">Los mejores productos, directo hasta tu puerta</p>
     </header>
 
-    <h2 style="text-align:center">Nuestros Productos</h2>
+    <div class="contenedor">
+        <h2>Nuestros Productos</h2>
+        <div class="grid-productos">
 
-    <div class="producto">
-        <h3>Producto 1</h3>
-        <p>Descripción del producto</p>
-        <p><strong>Precio: $XXX</strong></p>
+            <div class="producto">
+                <h3>Producto 1</h3>
+                <p>Descripción detallada de tu producto aquí</p>
+                <p class="precio">$299.00 MXN</p>
+                <a href="#" class="boton">Comprar Ahora</a>
+            </div>
+
+            <div class="producto">
+                <h3>Producto 2</h3>
+                <p>Descripción detallada de tu producto aquí</p>
+                <p class="precio">$499.00 MXN</p>
+                <a href="#" class="boton">Comprar Ahora</a>
+            </div>
+
+            <div class="producto">
+                <h3>Producto 3</h3>
+                <p>Descripción detallada de tu producto aquí</p>
+                <p class="precio">$199.00 MXN</p>
+                <a href="#" class="boton">Comprar Ahora</a>
+            </div>
+
+            <div class="producto">
+                <h3>Producto 4</h3>
+                <p>Descripción detallada de tu producto aquí</p>
+                <p class="precio">$899.00 MXN</p>
+                <a href="#" class="boton">Comprar Ahora</a>
+            </div>
+
+        </div>
     </div>
 
-    <div class="producto">
-        <h3>Producto 2</h3>
-        <p>Descripción del producto</p>
-        <p><strong>Precio: $XXX</strong></p>
-    </div>
 </body>
 </html>
-"página principal de la tienda"
