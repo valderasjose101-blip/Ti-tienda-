@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Tienda en Línea</title>
+    <title>Mi Tienda de Ropa</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-        body { background: #f8f9fa; }
+        body { background: #1a1a1a; color: white; }
         
         header {
-            background: linear-gradient(135deg, #2c3e50, #3498db);
-            color: white;
+            background: linear-gradient(135deg, #000, #333);
             padding: 30px;
             text-align: center;
+            border-bottom: 2px solid #e74c3c;
         }
 
-        h1 { font-size: 28px; margin-bottom: 5px; }
-        .subtitulo { opacity: 0.9; }
+        h1 { font-size: 28px; margin-bottom: 5px; color: #e74c3c; }
+        .subtitulo { color: #ccc; }
 
         .contenedor {
             max-width: 1200px;
@@ -26,8 +26,9 @@
 
         h2 {
             text-align: center;
-            color: #2c3e50;
+            color: #e74c3c;
             margin-bottom: 30px;
+            font-size: 24px;
         }
 
         .grid-productos {
@@ -37,22 +38,34 @@
         }
 
         .producto {
-            background: white;
+            background: #2b2b2b;
             border-radius: 12px;
             padding: 20px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
             transition: transform 0.3s;
         }
 
         .producto:hover { transform: translateY(-5px); }
 
-        .producto h3 {
-            color: #2c3e50;
-            margin-bottom: 10px;
+        .producto img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border: 2px solid #444;
         }
 
+        .producto h3 {
+            color: #fff;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .producto p { color: #bbb; font-size: 14px; margin-bottom: 5px; }
+
         .precio {
-            font-size: 22px;
+            font-size: 24px;
             color: #e74c3c;
             font-weight: bold;
             margin: 12px 0;
@@ -61,7 +74,7 @@
         .boton {
             display: block;
             width: 100%;
-            background: #27ae60;
+            background: #e74c3c;
             color: white;
             text-align: center;
             padding: 12px;
@@ -71,45 +84,57 @@
             margin-top: 10px;
         }
 
-        .boton:hover { background: #219653; }
+        .boton:hover { background: #c0392b; }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>🛍️ Mi Tienda en Línea</h1>
-        <p class="subtitulo">Los mejores productos, directo hasta tu puerta</p>
+        <h1>🔥 ESTILO URBANO 🔥</h1>
+        <p class="subtitulo">La mejor ropa, directo a ti</p>
     </header>
 
     <div class="contenedor">
         <h2>Nuestros Productos</h2>
         <div class="grid-productos">
 
+            <!-- PRODUCTO 1 -->
             <div class="producto">
-                <h3>Producto 1</h3>
-                <p>Descripción detallada de tu producto aquí</p>
+                <img src="imagenes/images (5).jpeg" alt="Sudadera Calavera">
+                <h3>Sudadera Calavera</h3>
+                <p>Tejido 320gsm — Mezcla Poliéster y Spandex</p>
+                <p>Alta calidad, resistente al estiramiento</p>
+                <p class="precio">$399.00 MXN</p>
+                <a href="#" class="boton">Comprar Ahora</a>
+            </div>
+
+            <!-- PRODUCTO 2 -->
+            <div class="producto">
+                <img src="imagenes/images (4).jpeg" alt="Playera No Limits">
+                <h3>Playera No Limits</h3>
+                <p>Estampado exclusivo — 100% Algodón</p>
+                <p>Disponible en varias tallas</p>
                 <p class="precio">$299.00 MXN</p>
                 <a href="#" class="boton">Comprar Ahora</a>
             </div>
 
+            <!-- PRODUCTO 3 -->
             <div class="producto">
-                <h3>Producto 2</h3>
-                <p>Descripción detallada de tu producto aquí</p>
-                <p class="precio">$499.00 MXN</p>
+                <img src="imagenes/images (3).jpeg" alt="Playera Mujer">
+                <h3>Playera Diseño Exclusivo</h3>
+                <p>Blanca — Estampado de alta definición</p>
+                <p>Corte cómodo y suave</p>
+                <p class="precio">$279.00 MXN</p>
                 <a href="#" class="boton">Comprar Ahora</a>
             </div>
 
+            <!-- PRODUCTO 4 -->
             <div class="producto">
-                <h3>Producto 3</h3>
-                <p>Descripción detallada de tu producto aquí</p>
-                <p class="precio">$199.00 MXN</p>
-                <a href="#" class="boton">Comprar Ahora</a>
-            </div>
-
-            <div class="producto">
-                <h3>Producto 4</h3>
-                <p>Descripción detallada de tu producto aquí</p>
-                <p class="precio">$899.00 MXN</p>
+                <img src="imagenes/images (2).jpeg" alt="Playera Gangster">
+                <h3>Playera Gangster</h3>
+                <p>Negra — Estilo urbano</p>
+                <p>Material resistente y cómodo</p>
+                <p class="precio">$319.00 MXN</p>
                 <a href="#" class="boton">Comprar Ahora</a>
             </div>
 
